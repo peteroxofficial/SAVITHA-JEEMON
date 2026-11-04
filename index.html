@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>SAVITHA JEEMON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090909;--fg:#f4f1ec;--muted:#a5a19a;--line:#292725;--gold:#c7a875}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:'DM Sans',sans-serif;font-weight:300}
+a{color:inherit;text-decoration:none}.wrap{max-width:1200px;margin:auto;padding:0 6vw}
+header{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-size:12px;letter-spacing:.22em;font-weight:500}.nav{font-size:11px;letter-spacing:.15em;color:var(--muted);display:flex;gap:30px}.nav a:hover{color:white}
+.hero{min-height:calc(100vh - 84px);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7vw;padding:70px 0 90px}
+.kicker{font-size:10px;letter-spacing:.28em;color:var(--gold);text-transform:uppercase;margin-bottom:24px}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(48px,7vw,94px);line-height:.98;letter-spacing:-.04em;margin:0}
+h1 span{display:block;color:#aaa39a;font-style:italic;margin-top:12px}
+.intro{font-size:14px;line-height:1.9;color:#aaa;margin:32px 0 0;max-width:340px}
+.hero-image{position:relative;max-height:690px;overflow:hidden;background:#171717}
+.hero-image img{width:100%;height:100%;max-height:690px;object-fit:cover;object-position:center 35%;display:block;filter:saturate(.88)}
+.hero-image:after{content:"";position:absolute;inset:0;border:1px solid #ffffff12;pointer-events:none}
+.image-label{position:absolute;bottom:18px;left:18px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;background:#090909a8;padding:10px 12px}
+.section{padding:100px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:35px}
+h2{font:400 clamp(32px,5vw,56px)/1.1 'Playfair Display',serif;margin:0}
+.small{font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.gallery figure{margin:0;background:#151515;overflow:hidden}
+.gallery img{width:100%;display:block;object-fit:cover;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.025)}
+.gallery figcaption{padding:14px 16px;color:var(--muted);font-size:10px;letter-spacing:.14em}
+.quote{padding:100px 0;text-align:center;border-top:1px solid var(--line)}
+.quote p{font:italic 400 clamp(25px,4vw,44px)/1.4 'Playfair Display',serif;max-width:760px;margin:0 auto;color:#d9d4cc}
+.quote .small{margin-top:28px}
+footer{border-top:1px solid var(--line);padding:30px 0 38px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;letter-spacing:.12em}
+@media(max-width:700px){.wrap{padding:0 22px}header{height:68px}.nav{gap:15px;font-size:9px}.hero{grid-template-columns:1fr;gap:35px;padding:55px 0 65px;min-height:auto}.hero-image{height:470px;max-height:none}.hero-image img{height:470px}.section{padding:65px 0}.gallery{gap:12px}.gallery figcaption{font-size:8px;padding:11px}.quote{padding:70px 0}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="#top">SAVITHA JEEMON</a>
+<nav class="nav"><a href="#gallery">GALLERY</a><a href="#about">ABOUT</a></nav>
+</header>
+<main id="top">
+<section class="hero">
+<div class="hero-copy">
+<div class="kicker">A little corner of the internet</div>
+<h1>Savitha<span>Jeemon.</span></h1>
+<p class="intro">Quiet moments, candid memories, and a collection of frames that feel like her.</p>
+</div>
+<div class="hero-image"><img src="assets/savitha-01.jpeg" alt="Savitha sitting in a car"><div class="image-label">Portrait · 01</div></div>
+</section>
+<section class="section" id="gallery">
+<div class="section-head"><h2>Selected moments</h2><span class="small">01 — 02</span></div>
+<div class="gallery">
+<figure><img src="assets/savitha-01.jpeg" alt="Savitha in a car, looking outside"><figcaption>01 / A quiet moment</figcaption></figure>
+<figure><img src="assets/savitha-02.jpeg" alt="Savitha in a car, portrait"><figcaption>02 / In her own frame</figcaption></figure>
+</div>
+</section>
+<section class="quote" id="about"><p>“Some moments don't need a caption.<br>They just deserve to stay.”</p><div class="small">SAVITHA JEEMON</div></section>
+</main>
+<footer><span>SAVITHA JEEMON</span><span>PERSONAL PHOTO JOURNAL · 2026</span></footer>
+</div>
+</body>
+</html>
